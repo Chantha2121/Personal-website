@@ -49,7 +49,7 @@ const projectData = [
     name: "Job Board",
     description:
       "The Job Board project is built using React.js to provide a dynamic and interactive platform for job listings and applications. It features a user-friendly interface that allows job seekers to browse job postings, apply for positions, and manage their profiles. The application also includes functionalities for employers to post job openings and review applications, creating a comprehensive solution for job matching and recruitment.",
-    link: "https://chantha2121.github.io/Personal-account/",
+    link: "https://project-job-board.vercel.app/",
     github: "https://github.com/Chantha2121/Personal-account",
   },
   {
