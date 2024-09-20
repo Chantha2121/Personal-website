@@ -61,6 +61,15 @@ const projectData = [
     link: "https://chantha2121.github.io/Personal-account/",
     github: "https://github.com/Chantha2121/Personal-account",
   },
+  {
+    image: "7.png",
+    category: "Full Stack",
+    name: "Memory App",
+    description:
+      `The Memory App is a full-stack web application built with React.js, Node.js, Express, and MongoDB, enabling users to efficiently manage personal memories. It allows users to create, update, and delete memories, with data stored in a MongoDB database. The frontend, developed in React, provides a responsive and intuitive interface, while the backend, powered by Node.js and Express, offers RESTful API endpoints for seamless CRUD operations. This app is ideal for organizing and preserving personal memories in a simple and user-friendly manner.`,
+    link: "https://github.com/Chantha2121/Memory-App-fullstack",
+    github: "https://github.com/Chantha2121/Memory-App-fullstack",
+  },
 ];
 
 const Work = () => {
