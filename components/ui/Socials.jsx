@@ -30,7 +30,7 @@ const icons = [
     hoverColor: 'hover:text-blue-500 dark:hover:text-blue-300'
   },
   {
-    path: 'https://drive.google.com/file/d/1goAQOtzaPiMwBF8PSx8b8cHIyTyTCJNS/view?usp=sharing', // Replace with actual download path or function
+    path: 'https://drive.google.com/file/d/1NHFS2faigfD3Rv_6BswSEOgIkrykuw2d/view?usp=sharing', // Replace with actual download path or function
     name: <RiInstallFill />,
     hoverColor: 'hover:text-green-500 dark:hover:text-green-300'
   }
