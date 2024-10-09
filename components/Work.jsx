@@ -70,6 +70,22 @@ const projectData = [
     link: "https://github.com/Chantha2121/Memory-App-fullstack",
     github: "https://github.com/Chantha2121/Memory-App-fullstack",
   },
+  {
+    image: "8.png",
+    category: "Next JS",
+    name: "E-commerce shop",
+    description: `The project is an e-commerce platform built using Next.js, where product data is fetched from the Fake Store API. The platform allows users to browse a variety of products, each displayed with details like title, description, price, and image. The application also features dynamic routing, where clicking on a product redirects users to a detailed view page (/product/{id}) that provides more information about the selected item. The project focuses on delivering a smooth and responsive user experience, utilizing Next.js's built-in features like server-side rendering (SSR) to ensure fast loading times and seamless navigation.`,
+    link: 'https://online-shop-phi-vert.vercel.app/',
+    github: 'https://github.com/Chantha2121/Movie-Website',
+  },
+  {
+    image: "9.png",
+    category: "JAVA",
+    name: "Soft Drink Management System",
+    description: `The Soft Drink Management System is a Java-based desktop application designed to efficiently manage the inventory and sales operations of a soft drink business. The system allows users to add, update, and monitor product information such as stock levels, pricing, and product details. It also facilitates recording sales transactions. Data is stored in **Excel files** using the **Apache POI** library, ensuring easy data management and reporting. This system streamlines the process of managing soft drink inventories, helping businesses maintain accurate records and make informed decisions to optimize their operations.`,
+    link: 'https://github.com/Chantha2121/java_soft_drink_management_system',
+    github: 'https://github.com/Chantha2121/java_soft_drink_management_system',
+  },
 ];
 
 const Work = () => {

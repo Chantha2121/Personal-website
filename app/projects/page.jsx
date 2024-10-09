@@ -66,6 +66,24 @@ const projectsData = [
     githubLink: 'https://github.com/Chantha2121/Memory-App-fullstack',
     liveLink: 'https://github.com/Chantha2121/Memory-App-fullstack',
   },
+  {
+    title: 'E-commerce shop',
+    description: `The project is an e-commerce platform built using Next.js, where product data is fetched from the Fake Store API. The platform allows users to browse a variety of products, each displayed with details like title, description, price, and image. The application also features dynamic routing, where clicking on a product redirects users to a detailed view page (/product/{id}) that provides more information about the selected item. The project focuses on delivering a smooth and responsive user experience, utilizing Next.js's built-in features like server-side rendering (SSR) to ensure fast loading times and seamless navigation.`,
+    image: '/8.png',
+    techStack: 'Next.JS',
+    category: 'next',
+    githubLink: 'https://github.com/Chantha2121/Movie-Website',
+    liveLink: 'https://online-shop-phi-vert.vercel.app/',
+  },
+  {
+    title: 'Soft Drink Management System',
+    description: `The Soft Drink Management System is a Java-based desktop application designed to efficiently manage the inventory and sales operations of a soft drink business. The system allows users to add, update, and monitor product information such as stock levels, pricing, and product details. It also facilitates recording sales transactions. Data is stored in **Excel files** using the **Apache POI** library, ensuring easy data management and reporting. This system streamlines the process of managing soft drink inventories, helping businesses maintain accurate records and make informed decisions to optimize their operations.`,
+    image: '/9.png',
+    techStack: 'JAVA',
+    category: 'JAVA',
+    githubLink: 'https://github.com/Chantha2121/java_soft_drink_management_system',
+    liveLink: 'https://github.com/Chantha2121/java_soft_drink_management_system',
+  },
 ];
 
 const Projects = () => {
@@ -94,6 +112,13 @@ const Projects = () => {
             >
               JAVA
             </TabsTrigger>
+            <TabsTrigger
+              value="next"
+              className="px-6 py-2 rounded-full bg-gray-300 dark:bg-gray-700 text-gray-700 dark:text-gray-300 font-semibold shadow hover:bg-gray-400 dark:hover:bg-gray-600 transition duration-300"
+            >
+              Next.JS
+            </TabsTrigger>
+
             <TabsTrigger
               value="fullstack"
               className="px-6 py-2 rounded-full bg-gray-300 dark:bg-gray-700 text-gray-700 dark:text-gray-300 font-semibold shadow hover:bg-gray-400 dark:hover:bg-gray-600 transition duration-300"
@@ -213,6 +238,60 @@ const Projects = () => {
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
               {projectsData
                 .filter((project) => project.category === 'JAVA')
+                .map((project, index) => (
+                  <div
+                    key={index}
+                    className="bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition duration-300"
+                  >
+                    <div className="relative">
+                      <Image
+                        src={project.image}
+                        alt={project.title}
+                        className="w-full h-72 object-cover"
+                        layout="responsive"
+                        width={1920}
+                        height={1080}
+                      />
+                      <div className="absolute top-0 left-0 px-3 py-1 bg-red-500 text-white text-sm font-semibold rounded-br-lg">
+                        {project.techStack}
+                      </div>
+                    </div>
+                    <div className="p-6">
+                      <h3 className="text-2xl font-bold mb-2">{project.title}</h3>
+                      <p className="text-gray-600 dark:text-gray-300 mb-4">{project.description}</p>
+                      <div className="flex space-x-2">
+                        {project.liveLink && (
+                          <a
+                            href={project.liveLink}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-block px-4 py-2 mt-2 bg-green-500 text-white font-semibold rounded-lg shadow hover:bg-green-600 transition duration-300"
+                          >
+                            View Result
+                          </a>
+                        )}
+                        {project.githubLink && (
+                          <a
+                            href={project.githubLink}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-block px-4 py-2 mt-2 bg-blue-500 text-white font-semibold rounded-lg shadow hover:bg-blue-600 transition duration-300"
+                          >
+                            View on GitHub
+                          </a>
+                        )}
+                      </div>
+                    </div>
+                  </div>
+                ))}
+            </div>
+          </TabsContent>
+
+          {/* Next Tab */}
+          <TabsContent value="next">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+              {projectsData
+                .filter((project) => project.category === 'next')
                 .map((project, index) => (
                   <div
                     key={index}
